@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndividualUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/userDetailsImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/user_image"
+            android:elevation="5dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/userDetailsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsImage"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Name:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsNameData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsImage"
+            android:layout_toRightOf="@id/userDetailsName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            tools:text="Atul"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userDetailsMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Mobile Number:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsMobileNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsName"
+            android:layout_toRightOf="@id/userDetailsMobileNo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="9876543210"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userDetailsEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsMobileNo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Email ID:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsEmailData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsMobileNo"
+            android:layout_toRightOf="@id/userDetailsEmail"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="atuljha123@gmail.com"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userDetailsAccountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsEmail"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Account Number:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsAccountNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsEmail"
+            android:layout_toRightOf="@id/userDetailsAccountNo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="534174532"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userDetailsIfsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsAccountNo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="IFSC Code:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsIfscData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsAccountNo"
+            android:layout_toRightOf="@id/userDetailsIfsc"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="ABC123XY"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/userDetailsBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsIfsc"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Current Balance:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/userDetailsBalanceData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsIfsc"
+            android:layout_toRightOf="@id/userDetailsBalance"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            tools:text="Rs.100000"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/transferMoneyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userDetailsBalance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="Transfer Money"
+            android:background="@drawable/user_image"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+</ScrollView>

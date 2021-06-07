@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/transactionCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fromUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="From User"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_icon"
+                android:layout_toRightOf="@id/fromUserName"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/toUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="To User"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/arrowIcon"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/balanceTransactionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1000/-"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/dateTransactionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="20-Oct-2020, 09:34 PM"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/fromUserName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/statusTransactionHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Success"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/balanceTransactionHistory"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
